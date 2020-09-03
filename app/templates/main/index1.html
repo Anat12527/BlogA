@@ -1,0 +1,136 @@
+{% extends 'base.html'%}
+
+{%block body%}
+
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark py-0 fixed-top">
+  <div class="container">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navblog" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <div class="collapse navbar-collapse" id="navblog">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">READING</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">POSTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  href="#">COMMENT</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</nav>
+
+<section id="header" class="jumbotron text-center">
+    <h1 class= "display-3">BOOKS SHARE</h1>
+</section>
+
+<section id="posts">
+    <div class="container-fluid ">
+        <div class="row align-items-start">
+                <div class="col-lg-8 ">
+	                    <div class="row ">
+                            <div class="col-md-4 ">
+                                <div class="head-picture ml-5">
+                                    <img class="img-fluid px-1" src = "{{ url_for('static', filename='css/room on rue amelie.jpg')}}" >
+                                 </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="post-content ">
+                                    <h4> The Room on Rue Amelie</h4>
+                                    <span>by Kristin Harmel</span>
+                                    <br>
+                                    The book is about.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Diam donec adipiscing tristique risus nec feugiat in fermentum.
+                                    Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit.
+                                    <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    read more
+                                   </a>
+                                    <div class="collapse" id="collapseExample">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                         <br><br>
+                                         <span>Like This</span><a href="#" class="btn btn-link btn-sm"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                         <span>Comment</span><a href="#" class="btn btn-link btn-sm"><i class="fa fa-hand-o-right" aria-hidden="true"></i></a>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-4 ">
+                                <div class="head-picture ml-5">
+                                    <img class="img-fluid px-1" src = "{{ url_for('static', filename='css/one plus one.jpg')}}" >
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                    <div class="post-content ">
+                                        <h4>The One plus One<div class="author"> by Jojo Moyse</div></h4>
+                                        <span class="meta">Posted by Anat on 3/9/2020</span>
+                                        <p>
+                                        The book is about.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Diam donec adipiscing tristique risus nec feugiat in fermentum.
+                                        Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit.
+                                        <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        read more
+                                       </a>
+                                            <div class="collapse" id="collapseExample">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                             <br><br>
+                                             <span>Like This</span><a href="#" class="btn btn-link btn-sm"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                              <span>Comment</span><a href="#" class="btn btn-link btn-sm"><i class="fa fa-hand-o-right" aria-hidden="true"></i></a>
+                                            </div>
+                                      </p>
+                                     </div>
+                            </div>
+                        </div>
+        </div>
+           <div class="col-md-4">
+
+                   <div class = "col">
+                        <div  class="text-center p-5"><blockquote class="bg-gray primary"><h5>"That's the thing about books.They let you travel without moving your feet."</h5></blockquote>
+                            <small>Jhumpa Lahiri
+                                <cite title="Source Title">American author</cite>
+                            </small>
+                        </div>
+                     </div>
+                   <div class="col">
+                       <img class="img-fluid px-1" src = "{{ url_for('static', filename='css/sincerely-media-c1YrcFYW66s-unsplash.jpg')}}" >
+                       <div class="bottom-left">
+                            <h5> Reading Now</h5>
+                       </div>
+                   </div>
+
+           </div>
+
+
+       </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+{%endblock%}
