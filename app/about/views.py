@@ -16,7 +16,7 @@ def reading():
     return render_template('about/reading.html')
 
 @about.route('/favorites',methods =['POST','GET'])
-def favoriets():
+def favorites():
     return render_template('about/favorites.html')
 
 

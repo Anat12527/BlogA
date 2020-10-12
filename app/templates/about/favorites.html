@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="container-fluid ">
+        <div class="row align-items-start">
+                <div class="col-lg-8 ">
+                     <div class="reading-now">
+                               <h1>My Favorites!!</h1>
+                               <ul>
+                                 <li>Paris for one and other stories By Jojo Moyes</li>
+                                 <li>Quote Me By Lori Nelson Spielman</li>
+                                 <li>Girl You Left Behind By Jojo Moyes</li>
+                               </ul>
+                           </div>
+
+                </div>
+                 <div class="col-lg-4 ">
+                     <div class="heart-book">
+                               <img class="img-fluid pl-5 pb-1 " src = "{{ url_for('static', filename='css/heart-book.jpg')}}" >
+                      </div>
+                </div>
+
+        </div>
+</div>
+
+
+{% endblock %}

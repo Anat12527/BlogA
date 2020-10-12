@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href =" {{url_for('posts.add_picture',picture_location='c:/Users/anatei/PycharmProjects/HelloWorld/blogA/app/static/css/room on rue amelie.jpg')}}">pictures</a>
+                  <a href ="{{url_for('posts.post_picture')}}">show pic</a>
+                  {% for picture in pictures %}
+                     <h4>sss</h4>
+                     <img class="img-fluid px-1" src = "{{ url_for('static', filename='css/room on rue amelie.jpg')}}" >
+                  {% endfor %}
+
+</body>
+</html>
+
+
+
+  {% for picture in pictures %}
+                            <h4>sss</h4>
+ <!--                       {% set name = picture.imageName + ".jpg" %}  -->
+                            {% set name = picture.imageName + ".jpg" %}
+                           <h5>{{name}}</h5>
+                            <img class="img-fluid px-1" src ="{{ url_for('static', filename='css/'+ name)}}" >
+                        {% endfor %}
+
+ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_B
+ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION

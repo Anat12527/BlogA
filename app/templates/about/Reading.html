@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="container-fluid ">
+        <div class="row align-items-start">
+                <div class="col-lg-8 ">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="reading-now">
+                               <h1>Reading Now!!</h1>
+                               <ul>
+                                 <li>Paris for one and other stories By Jojo Moyes</li>
+                                 <li>Quote Me By Lori Nelson Spielman</li>
+                                 <li>Girl You Left Behind By Jojo Moyes</li>
+                               </ul>
+                           </div>
+                       </div>
+                        <div class="col-lg-12">
+                           <div class="reading-importance mt-5">
+                               <h1>Why Is Reading Important ?</h1>
+                               <ul>
+                                  <li><span class="main"> Imagination</span> - By reading, you are exposed to so many wonderful things. This helps your imagination when it comes to creating and thinking.
+                                     By reading, you are painting those pictures of the story in your mind. Books can take you anywhere you want to go.</li>
+                                   <li><span class="main"> Focus and Concentration</span> - When you are reading, you are focusing and concentrating on one thing.  By sitting still and reading, you are training your body/mind and your child’s too slow down, relax, and focus on what you are reading.
+                                       This helps you/your child focus and concentrate on other activities because you are used to doing it.  </li>
+                                   <li><span class="main">Lower Levels Of Stress</span> - The act of reading and focusing on the written word can help relieve your mind off the pressures of the day. By pulling your mind away from the stress at hand, you can relax and let the stress melt away</li>
+                                   <li><span class="main">Reading Can Brighten Your Day</span> - Books can bring joy to your life on a daily basis. The act of reading is a great benefit both to your mental and physical health, but it can also brighten your day.</li>
+                                   <li><span class="main">Reading Exposes You To New Words</span> - You will encounter unfamiliar words now and then if you are an avid reader. You will also be exposed to various ways of saying the same things. This allows you to express yourself better.</li>
+                               </ul>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class ="col-lg-12 px-0">
+                           <div class="read before you think">
+                              <img class="img-fluid px-0 pt-1 pb-3" src = "{{ url_for('static', filename='css/read before you think.jpg')}}" >
+                           </div>
+                        </div>
+                         <div class ="col-lg-12">
+                            <div  class="text-center px-4 py-4"><blockquote class="bg-gray primary"><h5>"The more that you read, the more things you will know. The more that you learn, the more places you’ll go."</h5></blockquote>
+                                <small>Dr Seuss
+                                    <cite title="Source Title">American author</cite>
+                                </small>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+
+{% endblock %}

@@ -34,29 +34,47 @@
     <h1 class= "display-3">BOOKS SHARE</h1>
 </section>
 
-<section id="posts">
-    <div class="container">
-	   <div class="row">
-            <div style="background-color:lavender;" class="col-12 col-md-6">
+<section id="posts" >
+    <div class="container-fluid px-1">
+	   <div class="row justify-content align-items-start">
+            <div  class="col-10 col-md-6 px-1">
                 <div class="row">
-                    <div  class="col md-6">
+                    <div  class="col md-6 ">
                            <div class="head-picture">
-                            <img class="img-fluid" src = "{{ url_for('static', filename='css/sofia.jpg')}}" >
+                            <img class="img-fluid px-1" src = "{{ url_for('static', filename='css/sofia.jpg')}}" >
                            </div>
                     </div>
                      <div class="col md-6">
                             <div class="post-content">
-                                The book is about.
+                                <h4 class="display-4"> Name</h4>
+                                The book is about.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Diam donec adipiscing tristique risus nec feugiat in fermentum.
+                                Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit
                             </div>
                      </div>
-                   fgdfg
+
                 </div>
+                 <div class="col-2 ">
+                     <div >
+                         <a  href="https://www.amazon.co.uk/Top-New-Releases-Books/b?ie=UTF8&node=7388662031"><h5>Top New Book Releases</h5></a>
+                     </div>
+                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <div style="background-color:green;"> anat
+            <div class="col-12 col-md-6 align-self-end">
+                <div  class="text-center p-5"><blockquote class="bg-gray primary"><h5>"That's the thing about books.They let you travel without moving your feet."</h5></blockquote>
+                    <small>Jhumpa Lahiri
+                    <cite title="Source Title">American author</cite>
+                    </small>
                 </div>
-                 <div style="background-color:purple;">
-                                                    Shir
+
+                     <div class="row justify-content align-items-start">
+                       <div class="col md-6">
+                           <img class="img-fluid px-0" src = "{{ url_for('static', filename='css/sofia.jpg')}}" >
+                       </div>
+                       <div class="col md-6 ">The book is about
+                       </div>
+
+
                 </div>
             </div>
         </div>
