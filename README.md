@@ -1,2 +1,3 @@
 # BlogA
-![Image](bookshare_main1.jpg)
+![Image](main.jpg)
+![Image](about.jpg)
