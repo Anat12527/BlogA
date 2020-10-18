@@ -1,7 +1,7 @@
 from app import db
 from flask_login import  UserMixin
 from datetime import date
-
+from werkzeug_security import generate_password_hash,check_password_hash
 
 
 class BookPost(db.Model):
@@ -36,14 +36,20 @@ class Users(db.Model,UserMixin):
     __tablename__ = 'users'
     userId = db.Column(db.Integer, primary_key=True)
     userName = db.Column(db.String(50), nullable=False)
-    userPassword = db.Column(db.String(50), nullable=False)
+    userPassword_hash = db.Column(db.String(128))
     userActive = db.Column(db.Integer,nullable=False)
 
-    def __init__(self, userId, userName, userPassword,userActive):
+    def __init__(self, userId, userName,password,userActive):
         self.userId = userId
         self.userName = userName
-        self.userPassword = userPassword
+        self.userPassword_hash = generate_password_hash(password)
         self.userActive = userActive
+
+    def check_password(self,password):
+        return check_password_hash(self.userPassword_hash,password)
+
+    def get_id(self):
+        return self.userId
 
 
 class Comment(db.Model):

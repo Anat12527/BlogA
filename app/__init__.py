@@ -1,7 +1,7 @@
 
 from flask import Flask,blueprints
 from flask_sqlalchemy import SQLAlchemy
-#from flask_migrate import Migrate
+from flask_login import LoginManager
 
 
 app = Flask(__name__,static_url_path = '/static', static_folder='static')
@@ -9,6 +9,9 @@ app = Flask(__name__,static_url_path = '/static', static_folder='static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:newrootpassword@localhost/book_database'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'mysecretkey4'
+login_manager = LoginManager(app)
+login_maneger.login_view = 'log'
+loging_maneger.login.message = 'You Must Login!'
 db = SQLAlchemy()
 #Migrate = (app,db)
 db.init_app(app)
