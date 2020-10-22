@@ -1,7 +1,7 @@
 from app import db
 from flask_login import  UserMixin
 from datetime import date
-from werkzeug_security import generate_password_hash,check_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class BookPost(db.Model):

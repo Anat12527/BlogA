@@ -10,28 +10,30 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:newrootpassword@localhost/
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'mysecretkey4'
 login_manager = LoginManager(app)
-login_maneger.login_view = 'log'
-loging_maneger.login.message = 'You Must Login!'
+login_manager.login_view = 'user_valid_reg' #the user returns to this view function.
+login_manager.login_message = 'You must login in order to access the app '
 db = SQLAlchemy()
-#Migrate = (app,db)
+
 db.init_app(app)
 
-# Register blueprint(s)
 
 
-#
+
+
 from app.users.views import users
 from app.posts.views import posts
 from app.main.views import main
 from app.about.views import about
 from app.comment.views import comment
 
+
+# Register blueprint(s)
+
 app.register_blueprint(users,url_prefix="/users")
 app.register_blueprint(posts,url_prefix="/posts")
 app.register_blueprint(comment,url_prefix="/comment")
 app.register_blueprint(main,url_prefix="/main")
 app.register_blueprint(about,url_prefix="/about")
-#app.register_blueprint(main, subdomain='main')
 
 
 
