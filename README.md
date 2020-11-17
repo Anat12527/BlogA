@@ -1,8 +1,8 @@
 # Book Share
 
-```html
+<p align="center">
 <img src="https://img.icons8.com/office/16/000000/api.png"/>
-```
+<p>
 # Motivation
 I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.Happy reading!
 # Description
