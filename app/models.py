@@ -1,5 +1,6 @@
 from app import db
-from flask_login import  UserMixin
+from flask_login import UserMixin,AnonymousUserMixin
+
 from datetime import date
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -51,20 +52,30 @@ class Users(db.Model,UserMixin):
     def get_id(self):
         return self.userId
 
+class Anonymous(AnonymousUserMixin):
+   def __init__(self):
+       self.userName ='Guest'
+
+
 
 class Comment(db.Model):
 
     __tablename__ = 'comments'
     commentId = db.Column(db.Integer, primary_key=True)
-    commentDetail = db.Column(db.String(50), nullable=False)
+    commentDetail = db.Column(db.String(7000), nullable=False)
     commentOwnerId = db.Column(db.Integer,db.ForeignKey('users.userId'))
     commentDate = db.Column(db.DATE, default=date.today(), nullable=False)
+    commentPostId = db.Column(db.Integer,db.ForeignKey('posts.postId'))
+    postid = db.relationship('BookPost',backref='idpost')
+    usercomment = db.relationship('Users',backref='useronpost' )
 
-    def __init__(self, commentId, commentDetail, commentOwnerId, commentDate):
+
+    def __init__(self, commentId, commentDetail, commentOwnerId, commentDate,commentPostId):
         self.commentId = commentId
         self.commentDetail = commentDetail
         self.commentOwnerId = commentOwnerId
         self.commentDate = commentDate
+        self.commentPostId = commentPostId
 
 
 class Pictures(db.Model):

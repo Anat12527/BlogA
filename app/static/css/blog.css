@@ -39,10 +39,13 @@ body{
 	}
 
 
+
 .layout {
   margin:0 auto;
   max-width:1200px;
 }
+
+
 
 .container-fluid {
     margin:0 auto;
@@ -65,6 +68,36 @@ body{
   color:#ff80aa;
 
 }
+
+
+.my_recommendations h1{
+   position: absolute;
+   top: 150px;
+   color:#ff80aa;
+   font-family: 'Shadows Into Light', cursive;
+   font-size: 55px;
+   text-align:center;
+
+}
+
+.relax h1{
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  color:#e39e7d;
+}
+
+.recommendations .img-fluid {
+  width: 1000px;
+  height: 200px;
+  padding-bottom:20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
 
 .bottom-favorites {
 
@@ -121,6 +154,16 @@ body{
 
 }
 
+.post-content a{
+    color:#ff80aa;
+}
+
+
+
+
+
+
+
  .btn-link {
 
       color:#ff80aa;
@@ -151,12 +194,13 @@ h4{
 }
 
 
-h1 .enjoy{
+.enjoy h1{
      font-family: 'Shadows Into Light', cursive;
-
+     margin-top:15px;
+     font-size: 55px;
 }
 
- .enjoy{
+ .enjoy, .blog-archive{
 
     font-family: 'Shadows Into Light', cursive;
     font-size: 55px;
@@ -205,6 +249,9 @@ p {
     color: #ff80aa;
 }
 
+ li.nav-item {
+    color: #FFFAFA;
+}
 
 /*   reading.html  */
 
@@ -310,8 +357,57 @@ p {
         font-family: 'Raleway', sans-serif;
         font-size: 15px;
         color:#999999;
+}
 
 
+.all_comments .img-fluid {
+        heigth: 50px;
+        width:  50px;
+}
+
+span.user_name_c, .all_comments p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      color:#2C8FCC;
+      font-weight:600;
+}
+
+span.user_name_c span {
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        color:#999999;
+}
+
+/* all_posts */
+
+
+.blog-archive {
+   text-align:center;
+   margin-bottom:30px;
+}
+
+.data-archive {
+   text-align:center;
+}
+
+
+
+.data-archive dt a{
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 35px;
+    font-weight:200;
+    color:#999999
+}
+
+
+.data-archive dd a{
+
+     font-family: 'Fira Sans Condensed', sans-serif;
+     font-size: 25px;
+     font-weight:200;
+     color:#999999
 }
 
 

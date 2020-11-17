@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="container-fluid ">
+   <div class="row">
+    <div class="col-lg-6 pl-0">
+       <img class="img-fluid pb-3"src="/static/css/black-pen.jpg">
+       <img class="img-fluid pb-3"src="/static/css/heart-book.jpg">
+    </div>
+    <div class="col-lg-6">
+       <h1 class="blog-archive">Blog Archive</h1>
+        <div class="data-archive">
+            <h5>Here are my latest posts enoy!!</h5>
+             <br>
+             <br>
+          <dl>
+          {% for key, value in d.items() %}
+            <dt><a href="{{ key }}" data-toggle="collapse" data-target="#demo{{key}}">{{ key }}</a> ({{ value[1] }})</dt>
+            {% for m, c in value[0].items() %}
+              <div class="collapse" id="demo{{key}}"> <dd><a href=""data-toggle="collapse" data-target="#open{{key}}{{m}}">{{m|month_number}}</a>  ({{ c }})</dd></div>
+              <div class="collapse" id="open{{key}}{{m}}">
+                  {% for post in all_posts if (key==post.postDate.year) and (m==post.postDate.month) %}
+                    <a href="{{ url_for('comment.page_comment_top',post_id = post.postId,name =post.pic.imageName)}}">{{post.postTitle}}</a>
+                     <br>
+
+                  {%endfor%}
+
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
+</dl>
+
+    </div>
+   </div>
+</div>
+
+
+
+{% endblock %}

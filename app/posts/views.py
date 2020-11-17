@@ -2,7 +2,10 @@ from flask import Blueprint,render_template,url_for
 from app import db
 from app.models import BookPost,Pictures
 from flask import request,redirect
-from sqlalchemy import desc
+from collections import defaultdict,Counter
+import calendar
+from sqlalchemy import extract
+from flask_login import login_required
 
 
 posts = Blueprint('posts', __name__,template_folder='templates')
@@ -35,15 +38,58 @@ def post_add():
        db.session.add(image_detail_entered)
        db.session.commit()
        pic_datails = db.session.query(Pictures).filter(Pictures.imageName == picture_path_entered).first()
-       print(pic_datails.imageId)
-
        post_details_entered = BookPost(None,post_title_entered,post_author_entered, post_date_entered, post_owner_id_entered, pic_datails.imageId,post_details_entered,post_extra_entered)
-       print(BookPost)
        db.session.add(post_details_entered)
        db.session.commit()
        return redirect(url_for('main.index'))
 
 
+@posts.app_template_filter('month_number')
+def month_name(month_number):
+    return calendar.month_name[month_number]
+
+
+@posts.route('/posts_archive',methods=['POST','GET'])
+def display_posts():
+    all_posts = BookPost.query.all()
+    post_dict_list = defaultdict(list)
+    for post in all_posts:
+        post_dict_list[post.postDate.year].append(post.postDate.month)
+    dict_a = {}
+    for k_year,val_month in post_dict_list.items():
+        dict_a[k_year] = Counter(val_month)
+    dict_b = {}
+    # add the monthly and yearly totals counts
+    posttotal = 0
+    for key, value in dict_a.items():
+        yearsum = 0
+        for month, c in value.items():
+            yearsum += c
+            posttotal += c
+            dict_b[key] = yearsum
+
+    post_total_dict = defaultdict(list)
+    for d in (dict_a,dict_b):
+        for key,value in d.items():
+           post_total_dict[key].append(value)
+    print(post_total_dict)
+#    return render_template('archive.html', d=d)
+    return render_template('posts/all_posts.html',d=post_total_dict,all_posts=all_posts)
+
+@posts.route('/post_by_month/<int:year>/<int:month>',methods=['POST','GET'])
+@login_required
+def post_by_month(year,month):
+    print ("in")
+    if request.method == 'GET':
+       posts_m = db.session.query(BookPost).filter(extract('year',BookPost.postDate)==year).all()
+       print(posts_m)
+       return redirect(url_for('posts.posts_show'))
+#    else:
+#       return redirect(url_for('posts.posts_show'))
+
+#    payments = Payment.query.filter(extract('month', Payment.due_date) >= datetime.today().month,
+#                                extract('year', Payment.due_date) >= datetime.today().year,
+#                                extract('day', Payment.due_date) >= datetime.today().day).all()
 
 #@posts.route('/post_update',methods=['POST','GET'])
 #def post_update():

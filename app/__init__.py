@@ -3,15 +3,16 @@ from flask import Flask,blueprints
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 
-
 app = Flask(__name__,static_url_path = '/static', static_folder='static')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:newrootpassword@localhost/book_database'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'mysecretkey4'
 login_manager = LoginManager(app)
-login_manager.login_view = 'user_valid_reg' #the user returns to this view function.
-login_manager.login_message = 'You must login in order to access the app '
+
+login_manager.login_view = 'main.index' #the user returns to this view function.
+login_manager.login_message = 'You must login in order to comment'
+#login_manager.anonymous_user = AnonymousUserMixin
 db = SQLAlchemy()
 
 db.init_app(app)
@@ -25,6 +26,7 @@ from app.posts.views import posts
 from app.main.views import main
 from app.about.views import about
 from app.comment.views import comment
+
 
 
 # Register blueprint(s)
