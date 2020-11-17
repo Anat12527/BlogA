@@ -11,7 +11,7 @@ app.config['SECRET_KEY'] = 'mysecretkey4'
 login_manager = LoginManager(app)
 
 login_manager.login_view = 'main.index' #the user returns to this view function.
-login_manager.login_message = 'You must login in order to comment'
+login_manager.login_message = 'You must login'
 #login_manager.anonymous_user = AnonymousUserMixin
 db = SQLAlchemy()
 

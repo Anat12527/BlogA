@@ -5,19 +5,20 @@ from flask import request,redirect
 from collections import defaultdict,Counter
 import calendar
 from sqlalchemy import extract
-from flask_login import login_required
+from flask_login import login_required,current_user,login_manager
 
 
 posts = Blueprint('posts', __name__,template_folder='templates')
 
 
 @posts.route('/posts_show',methods = ['POST','GET'])
+@login_required
 def posts_show ():
- #   pictures = Pictures.query.all()
-    return render_template('posts/post_show.html')
 
+    return render_template('posts/post_show.html', user=current_user.userName)
 
 @posts.route('/post_get_details',methods =['POST','GET'])
+@login_required
 def post_get_details():
     post_title_entered = request.form.get('post_title')
     post_author_entered = request.form.get('post_author')
@@ -31,6 +32,7 @@ def post_get_details():
     return post_title_entered,post_author_entered, post_date_entered, post_owner_id_entered, picture_path_entered ,post_details_entered,post_extra_entered
 
 @posts.route('/add_post',methods=['POST','GET'])
+@login_required
 def post_add():
     if request.method == 'POST':
        post_title_entered ,post_author_entered, post_date_entered, post_owner_id_entered,picture_path_entered,post_details_entered,post_extra_entered,= post_get_details()
@@ -45,11 +47,13 @@ def post_add():
 
 
 @posts.app_template_filter('month_number')
+@login_required
 def month_name(month_number):
     return calendar.month_name[month_number]
 
 
 @posts.route('/posts_archive',methods=['POST','GET'])
+@login_required
 def display_posts():
     all_posts = BookPost.query.all()
     post_dict_list = defaultdict(list)
@@ -73,51 +77,20 @@ def display_posts():
         for key,value in d.items():
            post_total_dict[key].append(value)
     print(post_total_dict)
-#    return render_template('archive.html', d=d)
-    return render_template('posts/all_posts.html',d=post_total_dict,all_posts=all_posts)
+    if  current_user.is_anonymous:
+         return render_template('posts/all_posts.html',d=post_total_dict,all_posts=all_posts,user='Guest')
+    else:
+        return render_template('posts/all_posts.html', d=post_total_dict, all_posts=all_posts,user=current_user.userName)
+
 
 @posts.route('/post_by_month/<int:year>/<int:month>',methods=['POST','GET'])
 @login_required
 def post_by_month(year,month):
-    print ("in")
     if request.method == 'GET':
        posts_m = db.session.query(BookPost).filter(extract('year',BookPost.postDate)==year).all()
        print(posts_m)
        return redirect(url_for('posts.posts_show'))
-#    else:
-#       return redirect(url_for('posts.posts_show'))
-
-#    payments = Payment.query.filter(extract('month', Payment.due_date) >= datetime.today().month,
-#                                extract('year', Payment.due_date) >= datetime.today().year,
-#                                extract('day', Payment.due_date) >= datetime.today().day).all()
-
-#@posts.route('/post_update',methods=['POST','GET'])
-#def post_update():
-#    last_posts = BookPost.query.order_by(BookPost.postId .desc()).limit(2)
- #   last_posts = last_posts[::-1]
-#    print(last_posts[0].postTitle)
-   # post_top_page = last_posts[0]
-   # post_bottom_page = last_posts[1]
- #  return render_template('main/index1.html')
 
 
 
-
-#@posts.route('/add_picture/<path:picture_location>',methods=['POST','GET'])
-#def add_picture(picture_location):
- #   with open(picture_location,'rb') as file:
-#        binary_data = file.read()
- #   print(binary_data)
- #   new_picture =  Pictures(binary_data)
-  #  db.session.add(new_picture)
-  #  db.session.commit()
-  #  return redirect(url_for('posts.posts_show'))
-
-
-#@posts.route('/show_book_pic',methods =['POST','GET'])
-#def post_picture():
-   # pictures = Pictures.query.all()
-    #for picture in pictures:
-        #print(picture.imageId,picture.image)
-    #return redirect(url_for('posts.posts_show',pictures = pictures))
 
