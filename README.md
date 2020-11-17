@@ -1,6 +1,6 @@
 # Book Share
 # Motivation
-I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.
+I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.Happy reading!
 
 
 ![Image](main.jpg)
