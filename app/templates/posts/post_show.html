@@ -6,11 +6,11 @@
                         <form action="{{url_for('posts.post_add')}}" method="POST" >
                             <input name="_token" type="hidden" value="">
                           <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 pt-2">
                               <label for="inputTitle">Post Title</label>
                               <input type="text" class="form-control" id="inputTitle" name="post_title">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 pt-2">
                               <label for="inputPostAuthor">Author Name</label>
                               <input type="text" class="form-control" id="inputPostAuthor" name="post_author">
                             </div>
@@ -46,14 +46,8 @@
                           <button type="submit" class="btn btn-primary">post</button>
                         </form>
                 </div>
-            <div class="col-lg-4">
-
-
-            <img class="img-fluid px-2 pt-3 pb-3" src = "{{ url_for('static', filename='css/reading pink.jpg')}}" >
-
-
-
-
+            <div class="col-lg-4 pr-0">
+              <img class="img-fluid pr-0 pl-4 pt-3 pb-3" src = "{{ url_for('static', filename='css/reading pink.jpg')}}" >
             </div>
         </div>
 </div>
