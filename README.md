@@ -1,8 +1,8 @@
 <div id="container" style="white-space:nowrap">
-<div style="display:inline">
+<div style="display:inline-block">
   <img src="https://img.icons8.com/office/80/000000/api.png"/>
 </div>
-<div style="display:inline; white-space:nowrap;">
+<div style="display:inline-block; white-space:nowrap;">
    Made by Anat
 </div>
  </div> 
