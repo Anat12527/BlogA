@@ -7,7 +7,7 @@
 <br>
  
  
-| I am text to the left  | ![Flowers](https://img.icons8.com/office/80/000000/api.png) |
+ ![Flowers](https://img.icons8.com/office/80/000000/api.png) {: style="float: left"}  Anat  hhhh
 
 
 # Book Share
