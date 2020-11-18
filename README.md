@@ -7,8 +7,9 @@
 <br>
  
  
-Anat Eilam ![Alt text](https://img.icons8.com/office/80/000000/api.png "Optional title")
- 
+| I am text to the left  | ![Flowers](https://img.icons8.com/office/80/000000/api.png) |
+
+
 # Book Share
 
 
