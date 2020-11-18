@@ -1,7 +1,7 @@
 <div id="container">
-<div style="display:inline-block">
-  <img src="https://img.icons8.com/office/80/000000/api.png"/ align="left">
-  <h3>Made by Anat</h3>
+<div>
+  <img style="display:inline-block" src="https://img.icons8.com/office/80/000000/api.png"/ align="left">
+  <div style="display:inline-block"><h3>Made by Anat</h3></div
 </div>
 
  </div> 
