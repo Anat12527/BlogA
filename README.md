@@ -1,6 +1,6 @@
 <div>
-  <div> <img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 style="display:inline;vertical-align: text-bottom;"></div>
-  <div style="display:inline;vertical-align: middle;" >Made by Anat</div>
+  <div style="display:inline-block;vertical-align:middle;"> <img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 ></div>
+  <div style="display:inline-block;vertical-align:middle;">Made by Anat</div>
 <div>
 
 <br>
