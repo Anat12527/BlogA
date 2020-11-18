@@ -1,4 +1,4 @@
-<div id="container" style="white-space:nowrap">
+<div id="container">
 <div style="display:inline-block">
   <img src="https://img.icons8.com/office/80/000000/api.png"/>
   Made by Anat
