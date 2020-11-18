@@ -1,11 +1,10 @@
 <div  id="container">
-<div style="display:inline-block;vertical-align:middle;float: left"><img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 align="left"></div>
-<h3 style="display:inline">Made by Ana</h3>
+<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 ></div>
+<div > <h3 style="vertical-align:middle;line-height:70px">Made by Anat</h3><div>
 </div>
-
+  
 <br>
 <br>
-
 # Book Share
 
 
