@@ -1,6 +1,6 @@
 
 <div  id="container">
-<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png" height="60" width=90 align="left" ></div>
+<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png" height="80" width=100 align="left" ></div>
 <div > <h4 style="vertical-align:middle;line-height:90px">Made by Anat</h4><div>
 </div>
 <br>
