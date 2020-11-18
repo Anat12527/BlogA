@@ -1,7 +1,7 @@
-<div "text-align:left">
+<p "text-align:left">
    <img style="display:inline" src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 >
-  <p style="display:inline;vertical-align:top;line-height:50px;margin-left: 8px;"><h3>Made by Anat</h3</p>
-<div>
+<h3>Made by Anat</h3>
+<p>
 
 <br>
 <br>
