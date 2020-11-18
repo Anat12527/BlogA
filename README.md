@@ -1,6 +1,6 @@
 <div  id="container">
 <div style=display:inline-block;vertical-align:middle"><img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 align="left"></div>
-<h3 style="line-height: 23px;margin-top: 0">Made by Ana</h3>
+<h3 style="line-height: 70px;margin-top: 0">Made by Ana</h3>
 </div>
 
 <br>
