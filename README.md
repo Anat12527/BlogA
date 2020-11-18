@@ -1,5 +1,13 @@
+<div style="display:inline">
+  <img src="https://img.icons8.com/office/80/000000/api.png"/>
+</div>
+<div style="display:inline; white-space:nowrap;">
+   Made by Anat
+</div>
+
+
 <p align="left">
-<img src="https://img.icons8.com/office/80/000000/api.png"/><h1 style="text-align:left"> Made by Anat<h1><p>
+<h1 style="text-align:left"> Made by Anat<h1><p>
 
 
 # Book Share
