@@ -1,7 +1,7 @@
 
 <div  id="container">
-<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png" height="70" width=90 align="left" ></div>
-<div > <h3 style="vertical-align:middle;line-height:100px">Made by Anat</h3><div>
+<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png" height="60" width=90 align="left" ></div>
+<div > <h3 style="vertical-align:middle;line-height:500px">Made by Anat</h3><div>
 </div>
 <br>
 <br>
