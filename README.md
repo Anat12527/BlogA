@@ -1,6 +1,6 @@
 <div id="container">
 <div style="display:inline-block">
-  <img src="https://img.icons8.com/office/80/000000/api.png"/>
+  <img src="https://img.icons8.com/office/80/000000/api.png"/ align="left">
   Made by Anat
 </div>
 <div style="display:inline-block; white-space:nowrap;">
