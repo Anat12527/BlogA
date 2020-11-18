@@ -1,7 +1,7 @@
-<p "text-align:left">
+<div>
    <img style=display:inline;vertical-align:middle" src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 >
 <h3 style="display:inline;vertical-align:top;padding-left:10px;">Made by Ana</h3>
-<p>
+</div>
 
 <br>
 <br>
