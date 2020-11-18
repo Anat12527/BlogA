@@ -1,26 +1,11 @@
-<html>
-<head>
-	<title></title>
-	<style>
-		img {
-    
-    
-}
 
-h3 {
-   
-}
-	</style>
-</head>
-<body>
 <div  id="container">
-<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 ></div>
+<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 align="left" ></div>
 <div > <h3 style="vertical-align:middle;line-height:70px">Made by Ana</h3><div>
 </div>
 <br>
 <br>
-  </body>
-  </html>
+ 
 # Book Share
 
 
