@@ -1,5 +1,5 @@
 <div id="container">
-<div style="text-align:left">
+<div >
   <img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 style="display:inline;vertical-align:middle">
   <div style="display:inline;" >Made by Anat</div>
 </div>
