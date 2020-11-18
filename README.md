@@ -1,5 +1,5 @@
 <div  id="container">
-<div style=display:inline-block;vertical-align:middle"><img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 ></div>
+<div style=display:inline-block;vertical-align:middle"><img  src="https://img.icons8.com/office/80/000000/api.png"/ height="70" width=90 align="left"></div>
 <div style="display:inline-block;vertical-align:top;padding-left:10px;">Made by Ana</div>
 </div>
 
