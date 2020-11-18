@@ -1,11 +1,9 @@
 <div id="container">
 <div style="display:inline-block">
   <img src="https://img.icons8.com/office/80/000000/api.png"/ align="left">
-  Made by Anat
+  <h2>Made by Anat<h2>
 </div>
-<div style="display:inline-block; white-space:nowrap;">
-   Made by Anat
-</div>
+
  </div> 
 
 
