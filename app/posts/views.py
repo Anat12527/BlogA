@@ -93,4 +93,21 @@ def post_by_month(year,month):
 
 
 
+@posts.route('/post_to_delete/<int:post_id>',methods=['POST','GET'])
+@login_required
+def post_to_delete(post_id):
+    if request.method == 'GET':
+       all_posts = BookPost.query.all()
+       return render_template('posts/post_show.html', user=current_user.userName,all_posts = all_posts)
+    return render_template('posts/post_show.html', user=current_user.userName)
+
+
+@posts.route('/show_table_posts',methods=['POST','GET'])
+@login_required
+def show_table_posts():
+    all_posts = BookPost.query.all()
+    return render_template('posts/post_show.html', user=current_user.userName, all_posts=all_posts)
+
+
+
 

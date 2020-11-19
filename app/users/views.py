@@ -15,6 +15,7 @@ def get_user_id(userId):
 
 @users.route("/user_registration/<user_name_entered><password_name_entered>",methods=['POST','GET'])
 def user_registration(user_name_entered,password_name_entered):
+       print(user_name_entered,password_name_entered)
        if user_name_entered.isalpha() or user_name_entered.isnumeric():
           return redirect(url_for('main.index'))
        else:
