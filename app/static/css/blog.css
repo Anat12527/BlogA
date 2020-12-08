@@ -389,8 +389,22 @@ span.user_name_c span {
 
 .data-archive {
    text-align:center;
-   display:none;
+
 }
+
+/* all_posts_slider*/
+
+.swiper-container {
+    width: 600px;
+    height: 500px;
+    .swiper-slide {
+    background: #ccc;
+}
+
+}
+
+
+
 
 
 

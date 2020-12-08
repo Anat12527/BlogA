@@ -1,6 +1,6 @@
-from flask import Blueprint,render_template,url_for
+from flask import Blueprint,render_template,url_for,jsonify
 from app import db
-from app.models import BookPost,Pictures
+from app.models import BookPost,Pictures,Comment
 from flask import request,redirect
 from collections import defaultdict,Counter
 import calendar
@@ -14,8 +14,8 @@ posts = Blueprint('posts', __name__,template_folder='templates')
 @posts.route('/posts_show',methods = ['POST','GET'])
 @login_required
 def posts_show ():
-
-    return render_template('posts/post_show.html', user=current_user.userName)
+    all_posts = BookPost.query.all()
+    return render_template('posts/post_show.html', user=current_user.userName,all_posts=all_posts)
 
 @posts.route('/post_get_details',methods =['POST','GET'])
 @login_required
@@ -92,21 +92,35 @@ def post_by_month(year,month):
        return redirect(url_for('posts.posts_show'))
 
 
-
-@posts.route('/post_to_delete/<int:post_id>',methods=['POST','GET'])
+@posts.route('/post_to_delete/<int:post_id>',methods=['GET','POST'])
 @login_required
 def post_to_delete(post_id):
-    if request.method == 'GET':
-       all_posts = BookPost.query.all()
-       return render_template('posts/post_show.html', user=current_user.userName,all_posts = all_posts)
-    return render_template('posts/post_show.html', user=current_user.userName)
+#    if request.method == 'GET':
+       print("smart")
+       post_with_comments = db.session.query(Comment).filter(Comment.commentPostId == post_id).all()
+       post_to_delete = db.session.query(BookPost).filter(BookPost.postId == post_id).first()
+       if (post_with_comments):
+           for comment in post_with_comments:
+                db.session.delete(comment)
+                db.session.commit()
+       db.session.delete(post_to_delete)
+       db.session.commit()
+       listPosts = []
+       for data in BookPost.query.all():
+           listPosts.append(data.as_dict())
+       print(listPosts)
+       print(jsonify(listPosts))
+#       return jsonify(listPosts)
+       return redirect(url_for('posts.posts_show'))
+ #      return render_template('posts/post_show.html', user=current_user.userName,all_posts = all_posts)
+#    return render_template('posts/post_show.html', user=current_user.userName)
+#    return redirect(url_for('posts.posts_show'))
 
-
-@posts.route('/show_table_posts',methods=['POST','GET'])
-@login_required
-def show_table_posts():
-    all_posts = BookPost.query.all()
-    return render_template('posts/post_show.html', user=current_user.userName, all_posts=all_posts)
+#@posts.route('/show_table_posts',methods=['POST','GET'])
+#@login_required
+#def show_table_posts():
+ #   all_posts = BookPost.query.all()
+  #  return render_template('posts/post_show.html', user=current_user.userName, all_posts=all_posts)
 
 
 

@@ -31,6 +31,8 @@ class BookPost(db.Model):
         self.postDetails = postDetails
         self.postExtraDetails = postExtraDetails
 
+    def as_dict(self):
+        return {'postId': self.postId,'postTitle':self.postTitle,'postBy':self.postBy,'postDate':self.postDate}
 
 class Users(db.Model,UserMixin):
 
