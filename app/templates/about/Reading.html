@@ -35,7 +35,26 @@
                     <div class="row">
                         <div class ="col-lg-12 px-0">
                            <div class="read before you think">
-                              <img class="img-fluid px-0 pt-3 pb-3" src = "{{ url_for('static', filename='css/read before you think.jpg')}}" >
+                               <div class="swiper-container swiper1">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img class="img-fluid px-0 pt-3 pb-3" src = "{{ url_for('static', filename='css/read before you think.jpg')}}" ></div>
+                                        <div class="swiper-slide"><img class="img-fluid px-0 pt-3 pb-3" src = "{{ url_for('static', filename='css/reading pink.jpg')}}"></div>
+                                        <div class="swiper-slide"><img class="img-fluid px-0 pt-3 pb-3" src = "{{ url_for('static', filename='css/readnature.jpg')}}"></div>
+
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination swiper-pagination1"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev swiper-button-prev1"></div>
+                                    <div class="swiper-button-next swiper-button-next1"></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar swiper-scrollbar1"></div>
+                               </div>
+
                            </div>
                         </div>
                          <div class ="col-lg-12">

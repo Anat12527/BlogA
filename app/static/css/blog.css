@@ -394,16 +394,24 @@ span.user_name_c span {
 
 /* all_posts_slider*/
 
-.swiper-container {
-    width: 600px;
-    height: 500px;
+.swiper-container swiper2 {
+
     .swiper-slide {
+    width: 200px;
+    height: 300px;
     background: #ccc;
 }
 
 }
 
+.swiper-container swiper1 {
+    width: 350px;
+    height: 570px;
+    .swiper-slide {
+    background: #ccc;
+}
 
+}
 
 
 
