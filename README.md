@@ -16,7 +16,7 @@ Book Share
   
 I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.Happy reading!
   
-# Description
+# Description :pencil:
 
 The app enables me to add posts and allows registered users comment on each post.The app also displays a book archive and alows users read all past posts.
   
