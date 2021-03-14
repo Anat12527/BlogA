@@ -13,6 +13,8 @@ Book Share
 <div>
   
 # Motivation :muscle:
+
+<a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
   
 I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.Happy reading!
   
