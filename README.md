@@ -1,6 +1,5 @@
-
-<div  id="container">
-<div ><img style="float:left;margin-right:5px" src="https://img.icons8.com/office/80/000000/api.png" height="90" width=110 align="left" ><br><h2 style="vertical-align:middle;line-height:90px">Made by Anat</h2>         </div>
+#Made By
+:pencil2: Anat
 
 </div>
 <br>
