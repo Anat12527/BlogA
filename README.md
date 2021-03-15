@@ -1,8 +1,6 @@
 
- <div>
- <span style="color:#F1948A"> Book Share </span> <img src="Presentation1.jpg" width="500" height="200">
- </div>
-
+## Book Share <img src="Presentation1.jpg" width="600" height="300">
+ 
 ### Made By :pencil2:
 <div>
  Anat
