@@ -16,7 +16,7 @@ Book Share
   
 I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.
 Also and most important the purpose of this blog is to make people be aware of reading importance and the benefits of it.:star:
-In all, the importance of a book to help us learn and understand things cannot be underestimated.
+In my mind the importance of a book to help us learn and understand things cannot be underestimated.
 Happy reading! :relaxed: :orange_book:
   
 ### Description :pencil:
