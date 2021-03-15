@@ -1,5 +1,6 @@
 ![Image](Presentation1.jpg)
 
+<img src="Presentation1.jpg" width="100">
 
 
 # Made By :pencil2:
