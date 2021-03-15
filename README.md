@@ -1,6 +1,6 @@
 
 
-<img src="Presentation1.jpg" width="200" height="200">
+<img src="Presentation1.jpg" width="500" height="200">
 
 
 # Made By :pencil2:
