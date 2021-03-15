@@ -28,7 +28,7 @@ Backend: Python, Flask, MySQL, SQLAlchemy.
 <br>
 Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
 
-### Screenshots 
+### Screenshots :camera: :gift:
   
 ![Image](main.jpg)
 ![Image](about.jpg)
