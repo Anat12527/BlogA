@@ -1,6 +1,6 @@
-![Image](Presentation1.jpg)
 
-<img src="Presentation1.jpg" width="100">
+
+<img src="Presentation1.jpg" width="200" height="200">
 
 
 # Made By :pencil2:
