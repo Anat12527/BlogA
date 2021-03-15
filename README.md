@@ -6,7 +6,6 @@
  Anat
 </div>
 
- 
 
 ### Name :mag_right:
 <div>
@@ -23,15 +22,15 @@ Happy reading!
 ### Description :pencil:
 
 The app enables me to add posts and allows registered users comment on each post.The app also displays a book archive and alows users read all past posts.
+
+### Technologies  :computer:
+Backend: Python, Flask, MySQL, SQLAlchemy
+Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
   
 ![Image](main.jpg)
 ![Image](about.jpg)
 ![Image](favorites.jpg)
 ![Image](reading.jpg)
 ![Image](post.jpg)
-
-### Technologies  :computer:
-Backend: Python, Flask, MySQL, SQLAlchemy
-Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
 
 
