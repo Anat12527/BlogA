@@ -30,4 +30,8 @@ The app enables me to add posts and allows registered users comment on each post
 ![Image](reading.jpg)
 ![Image](post.jpg)
 
+### Technologies  :computer:
+Backend: Python, Flask, MySQL, SQLAlchemy
+Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
+
 
