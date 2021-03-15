@@ -27,6 +27,8 @@ The app enables me to add posts and allows registered users comment on each post
 Backend: Python, Flask, MySQL, SQLAlchemy.
 <br>
 Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
+
+### Screenshots 
   
 ![Image](main.jpg)
 ![Image](about.jpg)
