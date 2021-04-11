@@ -37,6 +37,6 @@ Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
 ![Image](listpostsb.png)
 ![Image](blogbarch.png)
 ![Image](favorites.jpg)
-![Image](reading.jpg)
+![Image](reading.png)
 
 
