@@ -30,7 +30,7 @@ Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
 
 ### Screenshots :camera: :gift:
   
-![Image](main.jpg)
+![Image](mainb.png)
 ![Image](about.jpg)
 ![Image](favorites.jpg)
 ![Image](reading.jpg)
