@@ -33,7 +33,7 @@ Frontend: JavaScript,  Jinja2, HTML5, CSS, Bootstrap.
 ![Image](mainb.png)
 ![Image](commentb.png)
 ![Image](about.jpg)
-![Image](abminb.png)
+![Image](adminb.png)
 ![Image](listpostsb.png)
 ![Image](favorites.jpg)
 ![Image](reading.jpg)
