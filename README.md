@@ -17,7 +17,7 @@ Book Share
 I am a big lover of books, and I love to share my thoughts and opinions on what I read, so I thought it was about time that I created a book blog.
 Also and most important the purpose of this blog is to make people be aware of reading importance and the benefits of it.:star:
 In my mind the importance of a book to help us learn and understand things cannot be underestimated.
-** “The more that you read, the more things you will know. The more that you learn, the more places you'll go.” Dr. Seuss.**
+**“The more that you read, the more things you will know. The more that you learn, the more places you'll go.” Dr. Seuss**
 
 So, Happy reading everyone! :relaxed: :orange_book:
   
