@@ -21,7 +21,7 @@ In my mind the importance of a book to help us learn and understand things canno
 
 So, Happy reading everyone! :relaxed: :orange_book:
   
-### Description :pencil:
+## Description :pencil:
 
 The app enables me to add posts and allows registered users comment on each post.The app also displays a book archive and alows users read all past posts.
 
